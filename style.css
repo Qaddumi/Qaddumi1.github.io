@@ -1,0 +1,50 @@
+body {
+   font-family: Arial, sans-serif;
+   text-align: center;
+   background: #f0f0f0;
+   margin: 0;
+   padding: 30px;
+ }
+
+ h1 {
+   margin-bottom: 20px;
+ }
+
+ #info {
+   margin-bottom: 20px;
+ }
+
+ #info p {
+   font-size: 28px;
+   margin: 10px 0;
+ }
+
+ #board {
+   display: grid;
+   grid-template-columns: repeat(4, 120px);
+   gap: 15px;
+   justify-content: center;
+   margin: 30px auto;
+ }
+
+ .card {
+   width: 120px;
+   height: 120px;
+   background: #444;
+   color: white;
+   font-size: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   border-radius: 8px;
+ }
+
+ .card.flipped {
+   background: white;
+   color: black;
+ }
+
+ .card.matched {
+   visibility: hidden;
+ }
